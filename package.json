@@ -1,0 +1,15 @@
+{
+  "name": "aiems-hub-backend",
+  "version": "1.0.0",
+  "description": "Backend for complete AIEMS HUB",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Simon Leo Alexander",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}
