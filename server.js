@@ -4,7 +4,7 @@ const cors = require('cors');
 const connectToBlogDB = require('./database');
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000
 
 // Middleware
 app.use(cors()); // Enable CORS for all routes
@@ -95,7 +95,7 @@ app.get('/blogs/:id', async (req, res) => {
 // });
 
 // Start the server
-app.listen(port, () => {
-  console.log(`Server has started at port ${port}.`);
+app.listen(PORT, () => {
+  console.log('server has started in port',PORT);
 });
 
