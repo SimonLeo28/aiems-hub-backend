@@ -1,8 +1,11 @@
 const mongoose = require("mongoose")
+const dotenv = require("dotenv")
+
+dotenv.config()
 
 async function connectToBlogDB()   
 {
-    await mongoose.connect("mongodb://localhost:27017/blog_database") //async function look into notepad async convert to sync using await
+    await mongoose.connect(process.env.MONGO_URI) //async function look into notepad async convert to sync using await
     console.log("Connected to database.")
 }
 
